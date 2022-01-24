@@ -1,0 +1,31 @@
+.header {
+    margin-top:  60px;
+}
+ .headerTitles {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-family: 'Irish Grover', cursive;  
+     
+ }
+
+ .headerTitleSm {
+     position: absolute;
+     top: 10%;
+     font-size: 80px;
+     color: orange;
+ }
+
+ .headerTitleLg {
+     position: absolute;
+     top: 32%;
+     font-size: 100px;
+     color: khaki;
+ }
+
+ .headerImg {
+     width: 100%;
+     height: 450px;
+     margin-top: 80px;
+     object-fit:cover;
+ }
