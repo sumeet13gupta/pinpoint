@@ -1,7 +1,9 @@
-import Topbar from "./topbar/Topbar";
+
 import Home from "./pages/home/Home";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Topbar from "./components/topbar/Topbar";
+import Single from "./pages/single/Single";
 
 
 function App() {
@@ -9,7 +11,7 @@ function App() {
   return (
      <Router>
        <Topbar />
-       <Home/>
+       <Single/>
 
      </Router>
   );

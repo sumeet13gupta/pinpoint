@@ -7,5 +7,53 @@
     background: linear-gradient(
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
-    )
+    ),
+    url("https://static.fmgsuite.com/media/images/0171c2ee-0fb4-4f08-bba6-c868e989c6a9.jpg?v=1");
+    background-size: cover;
+}
+
+.loginTitle {
+    font-size: 50px;
+}
+
+.loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm > label {
+    margin: 10px 0;
+}
+
+.loginInput {
+    padding: 10px;
+    background-color: lavender;
+    border: none;
+    border-radius: 10px;
+}
+.loginInput:focus {
+    outline: none;
+}
+.loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: lightgoldenrodyellow;
+    color: lightyellow;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.loginRegisterButton {
+    position:absolute;
+    top: 60px;
+    right: 20px;
+    background-color: tan;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color:white;
+    border-radius: 10px;
 }

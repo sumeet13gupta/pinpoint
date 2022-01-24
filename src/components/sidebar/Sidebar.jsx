@@ -7,9 +7,13 @@ export default function Sidebar() {
             <div className="sidebarItems">
                 <span className="sidebarTitle">ABOUT ME</span>
                 <img 
-                    src="https://th.bing.com/th/id/OIP.yoDQ7_rUJf2tgCgkEmF-JgHaHa?pid=ImgDet"
+                    src="https://i.etsystatic.com/14652458/r/il/a1518b/1723561800/il_fullxfull.1723561800_tgh1.jpg"
+                    width="100"
+                    height="100"
                     alt=""
+                    
                 />
+                <br/>
                 <p>
                     Some thing Something 
                 </p>
@@ -42,15 +46,20 @@ export default function Sidebar() {
                             Cinema
                         </Link>
                     </li>
+                    <li className="sidebarListItem">
+                        <Link className="link" to="/post?cat=Life">
+                            Life
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className="sidebarItem">
                 <span className="sidebarTitle"> FOLLOW US </span>
                 <div className="sidebarSocial">
-                    <i className="topIcon fab fa-facebook-square"></i>
-                    <i className="topIcon fab fa-instagram-square"></i>
-                    <i className="topIcon fab fa-pinterest-square"></i>
-                    <i className="topIcon fab fa-twitter-square"></i>
+                    <i className="sidebarIcon fab fa-facebook-square"></i>
+                    <i className="sidebarIcon fab fa-instagram-square"></i>
+                    <i className="sidebarIcon fab fa-pinterest-square"></i>
+                    <i className="sidebarIcon fab fa-twitter-square"></i>
                 </div>
             </div>
         </div>
