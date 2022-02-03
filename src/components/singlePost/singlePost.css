@@ -31,8 +31,9 @@
 .singlePostLike > :hover {
     font-weight: 800;
 }
-.singlePostLike > :active {
+.singlePostLike :enabled {
     font-weight: 800;
+    font-size: 40px;
     
 }
 .singlePostEdit {
