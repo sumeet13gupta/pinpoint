@@ -12,14 +12,14 @@
  .headerTitleSm {
      position: absolute;
      top: 10%;
-     font-size: 80px;
-     color: orange;
+     font-size: 800%;
+     color: darkolivegreen;
  }
 
  .headerTitleLg {
      position: absolute;
-     top: 32%;
-     font-size: 100px;
+     top: 25%;
+     font-size: 600%;
      color: khaki;
  }
 

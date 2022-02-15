@@ -29,6 +29,7 @@
 .topList {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -40,9 +41,9 @@
     cursor: pointer;
 }
 .topListItem:hover {
-    color:green;
-    font-size: 120%;
-    font-weight: 200%;
+    color:darkolivegreen;
+    font-size: 110%;
+    font-weight: 600%;
 }
 .topImg {
     width: 40px;
@@ -54,6 +55,6 @@
 }
 .topSearchIcon {
     font-size: 18px;
-    color:lightgreen;
+    color:darkolivegreen;
     cursor:pointer;
 }

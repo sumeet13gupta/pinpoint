@@ -1,52 +1,53 @@
-.login {
+.register {
     height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
     ),
-    url("https://static.fmgsuite.com/media/images/0171c2ee-0fb4-4f08-bba6-c868e989c6a9.jpg?v=1");
+    url("https://data.whicdn.com/images/54535641/original.jpg");
     background-size: cover;
 }
 
-.loginTitle {
+.registerTitle {
     font-size: 50px;
 }
 
-.loginForm {
+.registerForm {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.loginForm > label {
+.registerForm > label {
     margin: 10px 0;
 }
 
-.loginInput {
+.registerInput {
     padding: 10px;
-    background-color: lavender;
+    background-color: transparent;
     border: none;
     border-radius: 10px;
+    border-bottom: 1px solid darkolivegreen;
 }
-.loginInput:focus {
+.registerInput:focus {
     outline: none;
 }
-.loginButton {
+.registerButton {
     margin-top: 20px;
     cursor: pointer;
-    background-color: lightgoldenrodyellow;
-    color: lightyellow;
+    background-color: tan;
+    color: rgb(14, 14, 2);
     padding: 10px;
     border: none;
     border-radius: 10px;
     text-align: center;
 
 }
-.loginRegisterButton {
+.registerLoginButton {
     position:absolute;
     top: 60px;
     right: 20px;

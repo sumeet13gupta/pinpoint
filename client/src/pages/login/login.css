@@ -1,0 +1,60 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
+    ),
+    url("https://data.whicdn.com/images/54535641/original.jpg");
+    background-size: cover;
+}
+
+.loginTitle {
+    font-size: 50px;
+}
+
+.loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm > label {
+    margin: 10px 0;
+}
+
+.loginInput {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1px solid darkolivegreen;
+}
+.loginInput:focus {
+    outline: none;
+}
+.loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: tan;
+    color: rgb(14, 14, 2);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.loginRegisterButton {
+    position:absolute;
+    top: 60px;
+    right: 20px;
+    background-color: tan;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color:white;
+    border-radius: 10px;
+}
