@@ -6,6 +6,19 @@ const bcrypt = require('bcrypt');
 router.post("/register", async(req,res)=>{
     try{
         console.log("received register request !");
+        // check if user already registered or username has already been taken
+        try{
+        const existUsername = await User.findOne({ username: req.body.username});
+        if (existUsername) {
+            console.log('username taken');
+            const err = new Error("this Username has been Taken try another username !")
+            throw err;
+            
+        }
+    }catch(err){
+        res.status(400).json("This Username has been Taken try another username ! ")
+    }
+        // if username has not been taken , then register this new username in the database !
         const salt = await bcrypt.genSalt(10);
         const hashedPass = await bcrypt.hash(req.body.password, salt);
         const newUser = new User({
@@ -17,7 +30,7 @@ router.post("/register", async(req,res)=>{
         const user = await newUser.save();
         res.status(200).json(user);  //sends back the user
 
-
+        console.log("user registered successfully !");
     }catch(err){
         res.status(500)
     }
