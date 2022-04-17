@@ -1,16 +1,31 @@
+import { useEffect, useState } from "react";
 import Header from "../../components/header/Header";
-import Post from "../../components/post/Post";
+import Posts from "../../components/posts/Posts";
 import Sidebar from "../../components/sidebar/Sidebar";
-import "./home.css"
+import "./home.css";
+import axios from "axios";
+import { useLocation } from "react-router";
 
 export default function Home() {
+
+    const [posts,setPosts] = useState([]);
+    const {search} = useLocation();
+    useEffect(()=>{
+        const fetchPosts = async ()=>{
+            const res = await axios.get("/posts" + search);
+            setPosts(res.data);
+            console.log(res);
+        }
+        fetchPosts();
+    },[search]);
+    
     return (
         <>
+        <Header/>
         <div className="home">
-            <Header/>
-            <div className="home">
+                <Posts posts={posts} />
+                <Sidebar />
             </div>
-        </div>
         </>
     );
 }
